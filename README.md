@@ -10,13 +10,13 @@ There are 3 seperate subsystems that are required, they have been reviewd in fur
 
 ![Ignition Chart](./images/chart.png)
 
-# ESP32 Firmware
+## ESP32 Firmware
 The role of the ESP32 MCU is to collect sensor data, and publish MQTT topics to the broker.
 
-# MQTT Broker
+## MQTT Broker
 This is a standard Mosquitto broker running on Windows Host. Config file has been posted for version control.
 
-# MQTT SQL Bridge
+## MQTT SQL Bridge
 As Ignition SCADA Maker Edition does not provide a MQTT bridge, a python service was developed that would subscribe to weather station topics, and write the recieved data to a table in the ignition database.
 
 
