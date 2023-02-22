@@ -8,5 +8,5 @@ There are 3 seperate subsystems that are required, they have been reviewd in fur
 - MQTT Broker [Eclipse Mosquitto](https://mosquitto.org/)
 - MQTT > SQL Bridge service
 
-![DH22 Sensor](./images/chart.png)
+![Ignition Chart](./images/chart.png)
 
