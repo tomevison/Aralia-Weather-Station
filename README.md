@@ -4,9 +4,9 @@ Simple ESP32 based weather station that communicates with Ignition SCADA via MQT
 ![DH22 Sensor](./images/dh22.jpg)
 
 There are 3 seperate subsystems that are required, they have been reviewd in further detail below.
-- [ESP32 Firmware](ESP32 Firmware)
-- [MQTT Broker](MQTT Broker) [Eclipse Mosquitto](https://mosquitto.org/)
-- [MQTT > SQL Bridge service](MQTT SQL Bridge)
+[ESP32 Firmware](ESP32 Firmware)
+[MQTT Broker](MQTT Broker) [Eclipse Mosquitto](https://mosquitto.org/)
+[MQTT > SQL Bridge service](MQTT SQL Bridge)
 
 ![Ignition Chart](./images/chart.png)
 
