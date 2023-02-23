@@ -1,5 +1,5 @@
 # Aralia Weather Station
-Simple ESP32 based weather station that communicates with Ignition SCADA via MQTT. The sensor will take regular temperature and humidity readings to be displayed on Ignition SCADA historical chart.
+Simple ESP32 based weather station that communicates with Ignition SCADA via MQTT. The sensor will take regular temperature and humidity readings. Weather data will to be read by Ignition SCADA for alarming and historical logging.
 
 ![DH22 Sensor](./images/dh22.jpg)
 
