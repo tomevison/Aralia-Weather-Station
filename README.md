@@ -28,4 +28,5 @@ The service will continuously overwrite the first row of the database. There is 
 
 ## Ignition SCADA
 Ignition SCADA was configured with SQL tags.
+
     SELECT temp FROM mqtt_bridge WHERE id=1;
