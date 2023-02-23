@@ -7,6 +7,7 @@ There are 3 seperate subsystems that are required, they have been reviewd in fur
 - [ESP32 Firmware](#esp32-firmware)
 - [MQTT Broker](#mqtt-broker) [Eclipse Mosquitto](https://mosquitto.org/)
 - [MQTT > SQL Bridge service](#mqtt-sql-bridge)
+- [Ignition SCADA](#ignition-scada)
 
 ![Ignition Chart](./images/chart.png)
 
@@ -25,4 +26,6 @@ As Ignition SCADA Maker Edition does not provide a MQTT bridge, a python service
 
 The service will continuously overwrite the first row of the database. There is no requirement to store this data, only put it into a format that ignition understands. The MQTTSQLBridge was packaged as a windows serviceusing NSSM (Non-Sucking Service Manager).This allowsthe scriptto automatically start on reboot.
 
-
+## Ignition SCADA
+Ignition SCADA was configured with SQL tags.
+    SELECT temp FROM mqtt_bridge WHERE id=1;
