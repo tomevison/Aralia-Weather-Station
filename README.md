@@ -31,5 +31,7 @@ Ignition SCADA was configured with SQL tags.
 
     SELECT temp FROM mqtt_bridge WHERE id=1;
 
+The Ignition Perspective module was used for historical visualisation.
+
 ## Issues
 DH11 sensor is only able to read a maximum humidity value of 95%. The humidity is above this for most of the Northern Territory wet season. 
