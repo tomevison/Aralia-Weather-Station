@@ -24,9 +24,12 @@ This is a standard Mosquitto broker running on Windows Host. Config file has bee
 ## MQTT SQL Bridge
 As Ignition SCADA Maker Edition does not provide a MQTT bridge, a python service was developed that would subscribe to weather station topics, and write the recieved data to a table in the ignition database.
 
-The service will continuously overwrite the first row of the database. There is no requirement to store this data, only put it into a format that ignition understands. A python virtual environment was created, then the MQTTSQLBridge was packaged as a windows service using NSSM (Non-Sucking Service Manager). This allows the script to automatically start on reboot. NSSM will call a .bat file that will activate the VENV and then run the script.
+The service will continuously overwrite the first row of the database. There is no requirement to store this data, only put it into a format that ignition understands. A python virtual environment was created with required dependencies, then the MQTTSQLBridge was packaged as a windows service using NSSM (Non-Sucking Service Manager). This allows the script to automatically start on reboot. NSSM will call a .bat file that will activate the VENV and then run the script.
 
 ## Ignition SCADA
 Ignition SCADA was configured with SQL tags.
 
     SELECT temp FROM mqtt_bridge WHERE id=1;
+
+## Issues
+DH11 sensor is only able to read a maximum humidity value of 95%. The humidity is above this for most of the Northern Territory wet season. 
