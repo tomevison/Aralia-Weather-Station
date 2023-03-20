@@ -34,4 +34,4 @@ Ignition SCADA was configured with SQL tags.
 The Ignition Perspective module was used for historical visualisation.
 
 ## Issues
-DH11 sensor is only able to read a maximum humidity value of 95%. The humidity is above this for most of the Northern Territory wet season. 
+DH11 sensor is only able to read humidity data 20-80% +- 5%. The humidity is above this range for most of the Northern Territory wet season. This could be upgraded to DH22 which improves humidity sensing with range 0-100% +-2-5%.
